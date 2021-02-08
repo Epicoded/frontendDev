@@ -1,7 +1,10 @@
+$purple: #8f57fd;
+$blanco: white;
+
 body {
     margin: 0px;
     font-family: 'Muli', sans-serif;
-    background-color: #8F57FD;
+    background-color: $purple;
 }
 
 .header {
@@ -20,33 +23,33 @@ body {
 
 .header__menu {
     margin-right: 30px;
-}
 
-.header__menu ul {
-    display: none;
-    position: absolute;
-    padding: 0px;
-    width: 100px;
-    margin: 0px 0px 0px -14px;
-    text-align: right;
-    list-style: none;
-}
+    ul {
+        display: none;
+        position: absolute;
+        padding: 0px;
+        width: 100px;
+        margin: 0px 0px 0px -14px;
+        text-align: right;
+        list-style: none;
+    }
 
-.header__menu:hover ul, ul:hover {
-    display: block;
-}
+    .header__menu:hover ul, ul:hover {
+        display: block;
+    }
 
-.header__menu li {
-    margin: 10px 0px;
-}
-
-.header__menu li a {
-    color: white;
-    text-decoration: none;    
-}
-
-.header__menu li a:hover {
-    text-decoration: underline;        
+    li {
+        margin: 10px 0px;
+    }
+    
+    li a {
+        color: $blanco;
+        text-decoration: none;    
+    }
+    
+    li a:hover {
+        text-decoration: underline;        
+    }
 }
 
 .header__menu--profile {
@@ -54,16 +57,16 @@ body {
     margin-right: 8px;
     align-items: center;
     cursor: pointer;
-}
 
-.header__menu--profile img {
-    margin-right: 8px;
-    width: 40px;
-}
-
-.header__menu--profile p {
-    margin: 0px;
-    color: white;
+    img {
+        margin-right: 8px;
+        width: 40px;
+    }
+    
+    p {
+        margin: 0px;
+        color: $blanco;
+    }
 }
 
 .main {
@@ -75,12 +78,12 @@ body {
 }
 
 .main__title {
-    color: white;
+    color: $blanco;
     font-size: 25px;
 }
 
 .categories__title {
-    color: white;
+    color: $blanco;
     font-size: 16px;
     position: absolute;
     padding-left: 30px;
@@ -89,9 +92,9 @@ body {
 
 .input {
     background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid white;
+    border: 2px solid $blanco;
     border-radius: 30px;
-    color: white;
+    color: $blanco;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     height: 50px;
@@ -101,7 +104,7 @@ body {
 }
 
 ::placeholder {
-    color: white;
+    color: $blanco;
 }
 
 .carrousel {
@@ -112,7 +115,7 @@ body {
 }
 
 .carrousel__container {
-    white-space: nowrap; /* este estilo permite que todo el contenido sea linean aun cuando ya no haya espacio */
+    $blanco-space: nowrap; /* este estilo permite que todo el contenido sea linean aun cuando ya no haya espacio */
     margin: 70px 0px;
     padding-bottom: 10px;
 }
@@ -134,15 +137,6 @@ body {
 ::-webkit-scrollbar {
   display: none; /* se oculta la barra de scroll */
 }
-
-/*     .carousel::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 5px;
-}
-
-.carousel::-webkit-scrollbar {
-    background-color: rgba(255,255,255,0.1);
-} */
 
 .carrousel-item:hover ~ .carrousel-item {
     transform: translate3d(100px, 0, 0); /* movimiento del item al hover */
@@ -187,7 +181,7 @@ body {
 
 .carrousel-item__details--title, .carrousel-item__details--subtitle {
     margin: 0px;
-    color: white;
+    color: $blanco;
 }
 
 .footer {
@@ -195,11 +189,11 @@ body {
     align-items: center;
     height: 100px;
     width: 100%;
-    background-color: #8f57fd;
+    background-color: $purple;
 }
 
 .footer a {
-    color: white;
+    color: $blanco;
     cursor: pointer;
     font-size: 14px;
     font-family: 'Muli', sans-serif;
